@@ -1,0 +1,145 @@
+<html>
+  <head>
+         <title></title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+  </head>
+    <body id="body" onclick="jump()">
+<script src="https://raw.githack.com/atoms19/popAlert/main/popAlert.min.js">
+    </script>
+    <script>
+
+      
+    </script>
+       
+        <script src="https://tony-stark12345.github.io/My-First-Game/Script.js">
+        
+        
+        </script>
+  
+      <div class="back">
+         <div class="Game_over">
+          <b>Game over !!!</b>
+         </div>
+        <div class="user">
+        </div>
+        
+        <div class="obs animateObs">
+        </div>
+        
+        <div class="score">
+        <b>Your score:0</b>
+        </div>
+      </div>
+  
+        <style>
+   *{
+       margin: 0;
+       padding: 0;
+   }
+  .div{
+      width: 100vw;
+      height: 100vh;
+  }
+  .back{
+      width: 100vw;
+      height: 100vh;
+      background-image:url("https://tony-stark12345.github.io/My-First-Game/Back.jpg");
+      background-repeat: no-repeat;
+      background-size: 100vw 100vh;
+      position: relative;
+  }          
+   .user{
+     position: absolute;
+     width: 80px;
+     height: 65px;
+     background-image:url("https://tony-stark12345.github.io/My-First-Game/Char3.png");
+     background-size: cover;
+     top:1vh;
+     left:15vh;
+   }       
+   .obs{
+     position: absolute;
+     width: 80px;
+     height: 65px;
+     background-image:url("https://tony-stark12345.github.io/My-First-Game/Vil2.png");
+     background-size: cover;
+     top:90vh;
+     left:15vh;
+   }
+  .animate{
+    animation: animate 0.75s linear infinite;
+  }          
+    @keyframes animate{
+      0%{left:15vh;}
+      50%{left:40vh;
+        top:3vh;
+      }
+      100%{left:15vh;
+        top:7vh;
+      }
+      
+    }        
+    .animateObs{
+      animation: aniObs 4s linear infinite;
+    }
+    @keyframes aniObs{
+      0%{top:90vh;}
+      100%{top:-5vh;}
+    }
+    .Game_over{
+      position: absolute;
+      font-size: 32px;
+      left:40vh;
+      transform: rotate(90deg);
+      top:40vh;
+      visibility: hidden;
+font-family: 'Girassol', cursive;
+border:2px solid black;
+padding-left: 2px;
+
+    }
+    .score{
+      position: absolute;
+      font-size: 28px;
+      left:40vh;
+      transform: rotate(90deg);
+      top:70vh;
+      border: 2px solid black;
+font-family: 'Girassol', cursive;
+padding-left: 5px;
+    }
+    body{
+      overflow: hidden;
+    }
+    to{
+      
+      bottom: 0;
+      letter-spacing: 5px;
+      font-size: 32px;
+      color: orange;
+font-family: 'Girassol', cursive;
+    }
+   too{
+      
+      bottom: 0;
+      letter-spacing: 5px;
+      font-size: 32px;
+      color: red;
+font-family: 'Girassol', cursive;
+    }
+   to{
+      
+      bottom: 0;
+      letter-spacing: 5px;
+      font-size: 32px;
+      
+font-family: 'Girassol', cursive;
+    }
+        </style>
+        
+        
+        
+        
+    </body>
+</html>
